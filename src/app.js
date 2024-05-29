@@ -2,13 +2,15 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-app.get('', (req, res) => {
+app.get('/', (req, res) => {
   // TODO: Implement handling of the root endpoint '/'
+  res.end("Hello World!");
   // Replace this comment with your code to send "Hello World!"
 });
 
-app.get('', (req, res) => {
+app.get('/about', (req, res) => {
   // TODO: Implement handling of the '/about' endpoint
+  res.end("Welcome to about page");
   // Replace this comment with your code to send "Welcome to about page"
 });
 
